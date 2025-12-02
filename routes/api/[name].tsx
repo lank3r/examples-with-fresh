@@ -5,7 +5,7 @@ export const handler = define.handlers({
     const name = ctx.params.name;
     const responseData = {
     "code": 0,
-    "message": "hello",
+    "msg": "hello",
     "data": {
         "v": 1
     }
