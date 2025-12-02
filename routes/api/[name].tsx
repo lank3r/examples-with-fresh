@@ -4,7 +4,7 @@ export const handler = define.handlers({
   GET(ctx) {
     const name = ctx.params.name;
     const responseData = {
-      "code": 0,
+      "code": 2,
       "msg": "",
       "data": {
           "v": 1
