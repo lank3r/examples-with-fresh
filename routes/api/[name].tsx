@@ -5,10 +5,10 @@ export const handler = define.handlers({
     const name = ctx.params.name;
     const responseData = {
       "code": 0,
-      "msg": "hello",
-      "data": JSON.stringify({
+      "msg": "",
+      "data": {
           "v": 1
-      })
+      }
     }
     return new Response(
       JSON.stringify(responseData), {
