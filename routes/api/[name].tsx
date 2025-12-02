@@ -4,12 +4,12 @@ export const handler = define.handlers({
   GET(ctx) {
     const name = ctx.params.name;
     const responseData = {
-    "code": 0,
-    "msg": "hello",
-    "data": {
-        "v": 1
+      "code": 0,
+      "msg": "hello",
+      "data": JSON.stringify({
+          "v": 1
+      })
     }
-}
     return new Response(
       JSON.stringify(responseData), {
       headers: { "Content-Type": "application/json" },
